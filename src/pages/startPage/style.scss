@@ -1,0 +1,94 @@
+.startPg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .background{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        z-index: -30;
+       .backImg{
+        width: 100%;
+        height: 100%;
+       }
+    }
+    .progress{
+        position: absolute;
+        top: 20px;
+        max-width: 500px;
+        .progressbar{
+            width: 100%;
+        }
+        .progressbanana{
+            position: absolute;
+            top: -15px;
+            right: -30px;
+            width: 80px;
+        }
+    }
+    .store_monkey{
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        max-height: 500px;
+        .monkeyImg{
+            z-index: 10;
+            bottom: 60px;
+            left: 40%;
+            width: 380px;
+            height: 380px;
+        }
+        .convo{
+            background-image: url('../../assets/Group 149.png');
+            width: 400px;
+            height: 180px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 60px;
+            left: 44%;
+            z-index: 15;
+            margin-left: 6rem;
+            p{
+                font-size: 26px;
+                padding: 2rem;
+                font-weight: 800;
+                color:rgba(17, 174, 198, 1);
+                text-align: center;
+            }
+        }
+    }
+    .nextBtn{
+        position: absolute;
+        right: 50px;
+        bottom: 60px;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+       img{
+        width: 100%;
+        height: 100%;
+       }
+    }
+    .backBtn{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 114px;
+        height: 114px;
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
