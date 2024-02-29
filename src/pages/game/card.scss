@@ -6,6 +6,9 @@
     display: grid;
     grid-template-columns: 150px 150px 150px;
     gap: 10px;
+    .hidden {
+      visibility: hidden;
+    }
 
     .singleCard {
       perspective: 1000px;
@@ -15,6 +18,9 @@
       cursor: pointer;
       transform-style: preserve-3d;
       transition: transform 0.5s;
+      .hidden {
+        visibility: hidden;
+      }
       .cardFront,
       .cardBack {
         position: absolute;
@@ -57,8 +63,10 @@
         border-radius: 8px;
       }
       &.flipped .pinkcardback{
+        width: 150px;
         background-color: rgba(255, 235, 204, 1);
       }
+      
     }
   }
 }
