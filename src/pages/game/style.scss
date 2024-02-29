@@ -4,3 +4,15 @@
     display: flex;
     gap: 100px;
 }
+.progress{
+    width: 500px;
+    height: 20px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 7px;
+    border-radius: 8px;
+    .progressBar{
+        height: 100%;
+        background-color: rgb(255,207,37);
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,39 @@
+.winnerArea{
+    position: absolute;
+    left: 35%;
+    background-color: rgba(255, 245, 209, 1);
+    border-radius: 45px;
+    width: 450px;
+    height: 465px;
+    .banner{
+        width: 450px;
+        position: relative;
+        img{
+            width: 100%;
+            position: absolute;
+            top: -60px;
+            left:5px
+        };
+        p{
+            position: absolute;
+            top: -20px;
+            left: 120px;
+            z-index: 12;
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+        }
+    }
+    .monkey{
+        width: 250px;
+        position: absolute;
+        transform: translate(50%, 50%);
+    }
+    .result{
+        width: 350px;
+        position: absolute;
+        bottom: 20px;
+        left: 60px;
+        cursor: pointer;
+    }
+}

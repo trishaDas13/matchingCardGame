@@ -3,15 +3,14 @@ import './card.scss'; // Import SCSS file
 import { combinedCardsArray } from "./Data";
 import pinkCard from '../../assets/cardback.png';
 import blueCard from '../../assets/bluecard.png';
-import { nanoid } from 'nanoid';
 
-const Card = () => {
+const Card = ({score, setScore}) => {
   const [pinkCards, setPinkCards] = useState([]);
   const [blueCards, setBlueCards] = useState([]);
   const [clickedPinkCard, setClickedPinkCard] = useState(null);
   const [clickedBlueCard, setClickedBlueCard] = useState(null);
   const [pinkCardClicked, setPinkCardClicked] = useState(false);
-  const [score, setScore] = useState(0);
+ 
   const [matchedCards, setMatchedCards] = useState([]);
 
   const shuffleCards = (array) => {
@@ -65,7 +64,6 @@ const Card = () => {
 
   return (
     <div className="card-game">
-      <h2>Score: {score}</h2>
       <div className="cards_grid">
         {pinkCards.map((item) => (
           <div className={`singleCard ${clickedPinkCard === item.id ? 'flipped' : ''} ${matchedCards.includes(item.id) ? 'hidden' : ''}`} key={item.id} onClick={() => handlePinkCardClick(item.id)}>

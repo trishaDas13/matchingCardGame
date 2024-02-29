@@ -8,6 +8,7 @@ import NextPage from '../pages/nextPage/NextPage';
 import SecondNext from '../pages/secondNext/SecondNext';
 import Instruction from '../pages/instruction/Instruction';
 import Game from '../pages/game/Game';
+import Result from '../pages/result/Result';
 
 const Router = () => {
 
@@ -31,6 +32,10 @@ const Router = () => {
         {
             path: "/game",
             element: <Game/>
+        },
+        {
+            path: "/result",
+            element: <Result/>
         }
         
     ])
